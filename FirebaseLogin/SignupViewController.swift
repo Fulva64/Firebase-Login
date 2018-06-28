@@ -38,13 +38,19 @@ class SignupViewController: UIViewController {
         
         Auth.auth().createUser(withEmail: email, password: password, completion: { (user, error) in
             guard error == nil else {
-                print(" \n [ERROR] Can't create an Account \n   withError: \(error!._code, error!.localizedDescription) \n")
+                print(" \n ERRORE Non puoi Entrare \n   Codice Errore: \(error!._code, error!.localizedDescription) \n")
                 
-                let alert = ErrorMessageView.createAlert(title: "Can't create an Account!", message: "withError: \(error!._code, error!.localizedDescription)")
+                let alert = ErrorMessageView.createAlert(title: "Non è possibile creare l'account!", message: "Codice errore \(error!._code, error!.localizedDescription)")
                 self.show(alert, sender: nil)
                 
                 return
             }
+            
+            guard let currentUser = Auth.auth().currentUser else { return }
+            
+            let ref = Database.database().reference()
+            
+            ref.child("users").child(currentUser.uid).updateChildValues(["display_email" : currentUser.email!])
             
             //print("\n Welcome \(user!.email!)")
             self.performSegue(withIdentifier: "segueToHome", sender: nil)

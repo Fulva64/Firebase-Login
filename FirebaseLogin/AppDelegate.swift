@@ -20,22 +20,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         FirebaseApp.configure()
         
-        switch Auth.auth().currentUser {
-            
-        case nil:
-            
-            print(" \n Current User is logged out \n  show LoginViewController \n")
-            let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LoginViewController")
-            self.window?.rootViewController = vc
-            
-        default:
-            
-            print(" \n Current User is logged in \n show HomeViewController \n ")
-            
-            let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "HomeViewController")
-            self.window?.rootViewController = vc
-            
-        }
+//        switch Auth.auth().currentUser {
+//
+//        case nil:
+//
+//            print(" \n Current User is logged out \n  show LoginViewController \n")
+//            let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LoginViewController")
+//            self.window?.rootViewController = vc
+//            
+//        default:
+//
+//            print(" \n Current User is logged in \n show HomeViewController \n ")
+//
+//            let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "HomeViewController")
+//            self.window?.rootViewController = vc
+//
+//        }
         
         return true
     }

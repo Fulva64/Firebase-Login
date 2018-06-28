@@ -8,8 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1CAE756C48542B890196DFE1 /* Pods_FirebaseLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F40A2512F22699D0AEF0DA47 /* Pods_FirebaseLogin.framework */; };
-		AC1AF8E620E506E60006AE42 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1AF8E520E506E60006AE42 /* ImageViewController.swift */; };
-		AC1AF8E820E50EE30006AE42 /* CambiaMailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1AF8E720E50EE30006AE42 /* CambiaMailViewController.swift */; };
+		AC1AF8EB20E51D370006AE42 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1AF8EA20E51D370006AE42 /* HomePage.swift */; };
 		ACB9113820E4E931006FA6C4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ACB9113720E4E931006FA6C4 /* GoogleService-Info.plist */; };
 		E314AC011D2D7913008B87D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E314AC001D2D7913008B87D1 /* AppDelegate.swift */; };
 		E314AC081D2D7913008B87D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E314AC071D2D7913008B87D1 /* Assets.xcassets */; };
@@ -22,8 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AC1AF8E520E506E60006AE42 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
-		AC1AF8E720E50EE30006AE42 /* CambiaMailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CambiaMailViewController.swift; sourceTree = "<group>"; };
+		AC1AF8EA20E51D370006AE42 /* HomePage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
 		ACB9113720E4E931006FA6C4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CC5319C0D05D78366FDC7BF6 /* Pods-FirebaseLogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseLogin.release.xcconfig"; path = "Pods/Target Support Files/Pods-FirebaseLogin/Pods-FirebaseLogin.release.xcconfig"; sourceTree = "<group>"; };
 		E314ABFD1D2D7913008B87D1 /* FirebaseLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,6 +58,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		AC1AF8E920E51CB20006AE42 /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				AC1AF8EA20E51D370006AE42 /* HomePage.swift */,
+			);
+			name = HomePage;
+			sourceTree = "<group>";
+		};
 		E314ABF41D2D7913008B87D1 = {
 			isa = PBXGroup;
 			children = (
@@ -81,10 +87,8 @@
 		E314ABFF1D2D7913008B87D1 /* FirebaseLogin */ = {
 			isa = PBXGroup;
 			children = (
+				AC1AF8E920E51CB20006AE42 /* HomePage */,
 				E314AC121D2D7925008B87D1 /* ViewController */,
-				E314AC001D2D7913008B87D1 /* AppDelegate.swift */,
-				E314AC1B1D2D798F008B87D1 /* ErrorMessageView.swift */,
-				E314AC131D2D7948008B87D1 /* Main.storyboard */,
 				E314AC071D2D7913008B87D1 /* Assets.xcassets */,
 				E314AC091D2D7913008B87D1 /* LaunchScreen.storyboard */,
 				E314AC0C1D2D7913008B87D1 /* Info.plist */,
@@ -96,11 +100,12 @@
 		E314AC121D2D7925008B87D1 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				E314AC001D2D7913008B87D1 /* AppDelegate.swift */,
+				E314AC171D2D7985008B87D1 /* HomeViewController.swift */,
 				E314AC151D2D7985008B87D1 /* LoginViewController.swift */,
 				E314AC161D2D7985008B87D1 /* SignupViewController.swift */,
-				E314AC171D2D7985008B87D1 /* HomeViewController.swift */,
-				AC1AF8E520E506E60006AE42 /* ImageViewController.swift */,
-				AC1AF8E720E50EE30006AE42 /* CambiaMailViewController.swift */,
+				E314AC1B1D2D798F008B87D1 /* ErrorMessageView.swift */,
+				E314AC131D2D7948008B87D1 /* Main.storyboard */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -240,8 +245,7 @@
 				E314AC1C1D2D798F008B87D1 /* ErrorMessageView.swift in Sources */,
 				E314AC181D2D7985008B87D1 /* LoginViewController.swift in Sources */,
 				E314AC011D2D7913008B87D1 /* AppDelegate.swift in Sources */,
-				AC1AF8E820E50EE30006AE42 /* CambiaMailViewController.swift in Sources */,
-				AC1AF8E620E506E60006AE42 /* ImageViewController.swift in Sources */,
+				AC1AF8EB20E51D370006AE42 /* HomePage.swift in Sources */,
 				E314AC1A1D2D7985008B87D1 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

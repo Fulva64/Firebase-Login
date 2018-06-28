@@ -40,9 +40,9 @@ class LoginViewController: UIViewController {
         Auth.auth().signIn(withEmail: email, password: password, completion: { (user, error) in
             
             guard error == nil else {
-                print(" \n [ERROR] Can't Sign In \n   withError: \(error!._code, error!.localizedDescription) \n")
+                print(" \n ERRORE Non puoi Entrare \n   Codice Errore: \(error!._code, error!.localizedDescription) \n")
                 
-                let alert = ErrorMessageView.createAlert(title: "Can't Sign In!", message: "withError: \(error!._code, error!.localizedDescription)")
+                let alert = ErrorMessageView.createAlert(title: "Non puoi Entrare!", message: "Codice errore: \(error!._code, error!.localizedDescription)")
                 self.show(alert, sender: nil)
                 
                 return
